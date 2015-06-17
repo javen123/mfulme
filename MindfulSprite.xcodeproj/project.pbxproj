@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F1A36791B31E65100115632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A36781B31E65100115632 /* AppDelegate.swift */; };
+		8F1A367B1B31E65100115632 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A367A1B31E65100115632 /* GameScene.sks */; };
+		8F1A367D1B31E65100115632 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A367C1B31E65100115632 /* GameScene.swift */; };
+		8F1A367F1B31E65100115632 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A367E1B31E65100115632 /* GameViewController.swift */; };
+		8F1A36821B31E65100115632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36801B31E65100115632 /* Main.storyboard */; };
+		8F1A36841B31E65100115632 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36831B31E65100115632 /* Images.xcassets */; };
+		8F1A36871B31E65100115632 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36851B31E65100115632 /* LaunchScreen.xib */; };
+		8F1A36931B31E65100115632 /* MindfulSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F1A368D1B31E65100115632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F1A366B1B31E65100115632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1A36721B31E65100115632;
+			remoteInfo = MindfulSprite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F1A36731B31E65100115632 /* MindfulSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindfulSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1A36771B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1A36781B31E65100115632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F1A367A1B31E65100115632 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8F1A367C1B31E65100115632 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8F1A367E1B31E65100115632 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8F1A36811B31E65100115632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F1A36831B31E65100115632 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8F1A36861B31E65100115632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulSpriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1A36911B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulSpriteTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F1A36701B31E65100115632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1A36891B31E65100115632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F1A366A1B31E65100115632 = {
+			isa = PBXGroup;
+			children = (
+				8F1A36751B31E65100115632 /* MindfulSprite */,
+				8F1A368F1B31E65100115632 /* MindfulSpriteTests */,
+				8F1A36741B31E65100115632 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F1A36741B31E65100115632 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A36731B31E65100115632 /* MindfulSprite.app */,
+				8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F1A36751B31E65100115632 /* MindfulSprite */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A36781B31E65100115632 /* AppDelegate.swift */,
+				8F1A367A1B31E65100115632 /* GameScene.sks */,
+				8F1A367C1B31E65100115632 /* GameScene.swift */,
+				8F1A367E1B31E65100115632 /* GameViewController.swift */,
+				8F1A36801B31E65100115632 /* Main.storyboard */,
+				8F1A36831B31E65100115632 /* Images.xcassets */,
+				8F1A36851B31E65100115632 /* LaunchScreen.xib */,
+				8F1A36761B31E65100115632 /* Supporting Files */,
+			);
+			path = MindfulSprite;
+			sourceTree = "<group>";
+		};
+		8F1A36761B31E65100115632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A36771B31E65100115632 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F1A368F1B31E65100115632 /* MindfulSpriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */,
+				8F1A36901B31E65100115632 /* Supporting Files */,
+			);
+			path = MindfulSpriteTests;
+			sourceTree = "<group>";
+		};
+		8F1A36901B31E65100115632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A36911B31E65100115632 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F1A36721B31E65100115632 /* MindfulSprite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSprite" */;
+			buildPhases = (
+				8F1A366F1B31E65100115632 /* Sources */,
+				8F1A36701B31E65100115632 /* Frameworks */,
+				8F1A36711B31E65100115632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindfulSprite;
+			productName = MindfulSprite;
+			productReference = 8F1A36731B31E65100115632 /* MindfulSprite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F1A368B1B31E65100115632 /* MindfulSpriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSpriteTests" */;
+			buildPhases = (
+				8F1A36881B31E65100115632 /* Sources */,
+				8F1A36891B31E65100115632 /* Frameworks */,
+				8F1A368A1B31E65100115632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F1A368E1B31E65100115632 /* PBXTargetDependency */,
+			);
+			name = MindfulSpriteTests;
+			productName = MindfulSpriteTests;
+			productReference = 8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F1A366B1B31E65100115632 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jim Aven";
+				TargetAttributes = {
+					8F1A36721B31E65100115632 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					8F1A368B1B31E65100115632 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8F1A36721B31E65100115632;
+					};
+				};
+			};
+			buildConfigurationList = 8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "MindfulSprite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F1A366A1B31E65100115632;
+			productRefGroup = 8F1A36741B31E65100115632 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F1A36721B31E65100115632 /* MindfulSprite */,
+				8F1A368B1B31E65100115632 /* MindfulSpriteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F1A36711B31E65100115632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1A36871B31E65100115632 /* LaunchScreen.xib in Resources */,
+				8F1A36841B31E65100115632 /* Images.xcassets in Resources */,
+				8F1A367B1B31E65100115632 /* GameScene.sks in Resources */,
+				8F1A36821B31E65100115632 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1A368A1B31E65100115632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F1A366F1B31E65100115632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1A367D1B31E65100115632 /* GameScene.swift in Sources */,
+				8F1A367F1B31E65100115632 /* GameViewController.swift in Sources */,
+				8F1A36791B31E65100115632 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1A36881B31E65100115632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1A36931B31E65100115632 /* MindfulSpriteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F1A368E1B31E65100115632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F1A36721B31E65100115632 /* MindfulSprite */;
+			targetProxy = 8F1A368D1B31E65100115632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F1A36801B31E65100115632 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F1A36811B31E65100115632 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F1A36851B31E65100115632 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F1A36861B31E65100115632 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F1A36941B31E65100115632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F1A36951B31E65100115632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F1A36971B31E65100115632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindfulSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F1A36981B31E65100115632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindfulSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F1A369A1B31E65100115632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindfulSpriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindfulSprite.app/MindfulSprite";
+			};
+			name = Debug;
+		};
+		8F1A369B1B31E65100115632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindfulSpriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindfulSprite.app/MindfulSprite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "MindfulSprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1A36941B31E65100115632 /* Debug */,
+				8F1A36951B31E65100115632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1A36971B31E65100115632 /* Debug */,
+				8F1A36981B31E65100115632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSpriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1A369A1B31E65100115632 /* Debug */,
+				8F1A369B1B31E65100115632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F1A366B1B31E65100115632 /* Project object */;
+}
