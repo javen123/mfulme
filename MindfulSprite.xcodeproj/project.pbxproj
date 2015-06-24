@@ -15,6 +15,7 @@
 		8F1A36841B31E65100115632 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36831B31E65100115632 /* Images.xcassets */; };
 		8F1A36871B31E65100115632 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36851B31E65100115632 /* LaunchScreen.xib */; };
 		8F1A36931B31E65100115632 /* MindfulSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */; };
+		8F614D2F1B39B5770040D83E /* GameInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F614D2E1B39B5770040D83E /* GameInstructions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulSpriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1A36911B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulSpriteTests.swift; sourceTree = "<group>"; };
+		8F614D2E1B39B5770040D83E /* GameInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				8F1A36831B31E65100115632 /* Images.xcassets */,
 				8F1A36851B31E65100115632 /* LaunchScreen.xib */,
 				8F1A36761B31E65100115632 /* Supporting Files */,
+				8F614D2E1B39B5770040D83E /* GameInstructions.swift */,
 			);
 			path = MindfulSprite;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F614D2F1B39B5770040D83E /* GameInstructions.swift in Sources */,
 				8F1A367D1B31E65100115632 /* GameScene.swift in Sources */,
 				8F1A367F1B31E65100115632 /* GameViewController.swift in Sources */,
 				8F1A36791B31E65100115632 /* AppDelegate.swift in Sources */,
@@ -419,6 +423,7 @@
 				8F1A36981B31E65100115632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSpriteTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				8F1A369B1B31E65100115632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
