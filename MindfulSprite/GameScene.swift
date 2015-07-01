@@ -9,18 +9,28 @@
 import SpriteKit
 
 
+
+
 class GameScene: SKScene {
     
-    var startingPoint:CGPoint!
-    var startTime:NSTimeInterval!
+    var start:CGPoint?
+    var startTime:NSTimeInterval?
+    var rotateRight:Bool = true
     
-    let kMinDistance:CGFloat    = 25
-    let kMinDuration:CGFloat    = 0.1
-    let kMinSpeed:CGFloat       = 100
-    let kMaxSpeed:CGFloat       = 500
+    var kMinDistance:CGFloat   = 25.0
+    var kMinDuration:CGFloat   = 0.1
+    var kMinSpeed:CGFloat      = 50.0
+    var kMaxSpeed:CGFloat      = 1300.0
+    
+    var kDeceleration:CGFloat   = 1.0
+    var kSpinnerSpeed:CGFloat     = 0.0
     
     let background = SKSpriteNode(imageNamed: "board")
     let spinner = SKSpriteNode(imageNamed: "spinner")
+    
+    var vc:UIViewController?
+    var section:CGFloat!
+    
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -38,81 +48,113 @@ class GameScene: SKScene {
         self.addChild(background)
         
         // add spinner
-        spinner.position = CGPointMake(125,0)
-        spinner.physicsBody = SKPhysicsBody(rectangleOfSize: spinner.size)
-        spinner.size = (CGSize(width: 200, height: 15))
-        spinner.physicsBody?.pinned = true
-        spinner.physicsBody?.angularDamping = 1
-        background.addChild(spinner)
+        spinner.position = CGPointMake(frame.midX, frame.midY)
+        spinner.size = CGSize(width: 250, height: 25)
+        spinner.position = CGPoint(x: 125, y: 0.0)
+        spinner.zPosition = 10
         
+        
+        
+        /*spinner!.physicsBody = SKPhysicsBody(texture: spinner!.texture, size: spinner!.size);
+        spinner!.physicsBody!.affectedByGravity = true;
+        spinner!.physicsBody!.allowsRotation = true;*/
+        
+        background.addChild(spinner)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        for touch in (touches as! Set<UITouch>) {
-            var location = touch.locationInNode(self)
-            self.startingPoint = location
-            self.startTime = touch.timestamp
+        //avoid multi-touch gesture
+        if(touches.count > 1){
+            return;
+        }
+        
+        if let touch:UITouch = touches.first as? UITouch{
+            let location:CGPoint = touch.locationInView(self.view!)
+            start = location
+            startTime = touch.timestamp
         }
     }
-   
+    
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        for touch in (touches as! Set<UITouch>) {
-            var location = touch.locationInNode(self)
-            var dx:CGFloat = location.x - self.startingPoint.x
-            var dy:CGFloat = location.x - self.startingPoint.y
+        if let touch:UITouch = touches.first as? UITouch{
+            let location:CGPoint = touch.locationInView(self.view!)
+            
+            if(location.x > start!.x) {
+                rotateRight = true
+            } else {
+                rotateRight = false
+            }
+            
+            var dx:CGFloat = location.x - start!.x;
+            var dy:CGFloat = location.y - start!.y;
             var magnitude:CGFloat = sqrt(dx*dx+dy*dy)
             
-            if magnitude >= kMinDistance {
-                let dt:CGFloat = CGFloat(touch.timestamp - self.startTime)
-                if dt > kMinDuration {
-                    let speed:CGFloat = magnitude / dt
-                    if speed >= kMinSpeed && speed <= kMaxSpeed {
-                        dx = dx / magnitude
-                        dy = dy / magnitude
-                        println("swipe speed CGFloat:\(speed) and direction is \(dx, dy)")
+            if (magnitude >= kMinDistance) {
+                // Determine time difference from start of the gesture
+                var dt:CGFloat = CGFloat(touch.timestamp - startTime!)
+                if (dt > kMinDuration) {
+                    // Determine gesture speed in points/sec
+                    var speed:CGFloat = magnitude / dt;
+                    if (speed >= kMinSpeed /*&& speed <= kMaxSpeed*/) {
+                        println("swipe detected")
+                        var fracSpeed = speed / (kMaxSpeed - kMinSpeed)
+                        if(fracSpeed > 1) {fracSpeed = 1.0}
+                        
+                        kSpinnerSpeed = fracSpeed * 10;
+                        
                     }
                 }
             }
         }
     }
-   
+    
+    
+    var lastUpdateTimeInterval: CFTimeInterval?
     override func update(currentTime: CFTimeInterval) {
-      
-    }
-    
-    func handlePan(recognizer:UIPanGestureRecognizer) {
+        /* Called before each frame is rendered */
         
-//        var location = recognizer.locationInView(self.view)
-//            location = self.convertPointFromView(location)
-//        
-//        if recognizer.state == UIGestureRecognizerState.Began {
-//            
-//            let dx = location.x - spinner.position.x;
-//            let dy = location.y - spinner.position.y;
-//            // Save vector from node to touch location
-//            startingPoint = CGPointMake(dx, dy)
-//        }
-//            
-//        else if recognizer.state == UIGestureRecognizerState.Ended
-//        {
-//            var location = recognizer.locationInView(self.view)
-//            location = self.convertPointFromView(location)
-//            
-//            var dx = location.x - spinner.position.x;
-//            var dy = location.y - spinner.position.y;
-//            
-//            // Determine the direction to spin the node
-//            let direction = CGFloat(startingPoint.x * dy - startingPoint.y * dx);
-//            
-//            dx = recognizer.velocityInView(self.view).x
-//            dy = recognizer.velocityInView(self.view).y
-//            
-//            // Determine how fast to spin the node. Optionally, scale the speed
-//            let speed = sqrt(dx*dx + dy*dy) * 0.5
-//            
-//            // Apply angular impulse
-//            spinner.physicsBody?.applyAngularImpulse(speed * direction)
-//        }
+        
+        var delta: CFTimeInterval = currentTime // no reason to make it optional
+        if let luti = lastUpdateTimeInterval {
+            delta = currentTime - luti
+        }
+        
+        lastUpdateTimeInterval = currentTime
+        
+        if (kSpinnerSpeed == 0.0) {
+            return
+        }
+        
+        var rotatedDistance = (CGFloat)(delta) * kSpinnerSpeed;
+        
+        if(rotateRight == true) {
+            spinner.zRotation -= rotatedDistance;
+        } else {
+            spinner.zRotation += rotatedDistance;
+        }
+        
+        
+        kSpinnerSpeed = kSpinnerSpeed - ((CGFloat)(delta) * kDeceleration)
+        if (kSpinnerSpeed <= 0.0) {
+            kSpinnerSpeed = 0.0
+            
+            var finalAngle = fabs(spinner.zRotation);
+            let sectionAngle = M_PI/5
+            var remainderAngle = (finalAngle % (CGFloat)(2*M_PI))
+            
+            self.section = ceil(remainderAngle / (CGFloat)(sectionAngle))
+            
+            if(spinner.zRotation > 0) {
+                self.section = 11 - self.section
+            }
+            
+            println("the tile piece is \(self.section)")
+            
+            globalGame = Int(section)
+           
+            self.vc!.performSegueWithIdentifier("gameSegue", sender: self.vc)
+            self.vc!.navigationController?.popViewControllerAnimated(true)
+            
+        }
     }
-    
 }

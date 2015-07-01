@@ -16,6 +16,9 @@
 		8F1A36871B31E65100115632 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A36851B31E65100115632 /* LaunchScreen.xib */; };
 		8F1A36931B31E65100115632 /* MindfulSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */; };
 		8F614D2F1B39B5770040D83E /* GameInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F614D2E1B39B5770040D83E /* GameInstructions.swift */; };
+		8F94A8A81B4479AA000B40C2 /* Game2InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F94A8A71B4479AA000B40C2 /* Game2InstructionsVC.swift */; };
+		8F94A8AA1B44893D000B40C2 /* Game3InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F94A8A91B44893D000B40C2 /* Game3InstructionsVC.swift */; };
+		8FA128331B440F1B000D7688 /* GameInstructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA128321B440F1B000D7688 /* GameInstructVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,10 @@
 		8F1A36911B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulSpriteTests.swift; sourceTree = "<group>"; };
 		8F614D2E1B39B5770040D83E /* GameInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructions.swift; sourceTree = "<group>"; };
+		8F94A8A71B4479AA000B40C2 /* Game2InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game2InstructionsVC.swift; sourceTree = "<group>"; };
+		8F94A8A91B44893D000B40C2 /* Game3InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game3InstructionsVC.swift; sourceTree = "<group>"; };
+		8FA128321B440F1B000D7688 /* GameInstructVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructVC.swift; sourceTree = "<group>"; };
+		8FA128341B441689000D7688 /* HoboStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HoboStd.otf; path = ../HoboStd.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +90,14 @@
 		8F1A36751B31E65100115632 /* MindfulSprite */ = {
 			isa = PBXGroup;
 			children = (
+				8FA128311B440EEF000D7688 /* VCs */,
 				8F1A36781B31E65100115632 /* AppDelegate.swift */,
 				8F1A367A1B31E65100115632 /* GameScene.sks */,
 				8F1A367C1B31E65100115632 /* GameScene.swift */,
-				8F1A367E1B31E65100115632 /* GameViewController.swift */,
 				8F1A36801B31E65100115632 /* Main.storyboard */,
 				8F1A36831B31E65100115632 /* Images.xcassets */,
 				8F1A36851B31E65100115632 /* LaunchScreen.xib */,
 				8F1A36761B31E65100115632 /* Supporting Files */,
-				8F614D2E1B39B5770040D83E /* GameInstructions.swift */,
 			);
 			path = MindfulSprite;
 			sourceTree = "<group>";
@@ -99,6 +105,8 @@
 		8F1A36761B31E65100115632 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F614D2E1B39B5770040D83E /* GameInstructions.swift */,
+				8FA128341B441689000D7688 /* HoboStd.otf */,
 				8F1A36771B31E65100115632 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -119,6 +127,17 @@
 				8F1A36911B31E65100115632 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FA128311B440EEF000D7688 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A367E1B31E65100115632 /* GameViewController.swift */,
+				8FA128321B440F1B000D7688 /* GameInstructVC.swift */,
+				8F94A8A71B4479AA000B40C2 /* Game2InstructionsVC.swift */,
+				8F94A8A91B44893D000B40C2 /* Game3InstructionsVC.swift */,
+			);
+			name = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +244,9 @@
 				8F614D2F1B39B5770040D83E /* GameInstructions.swift in Sources */,
 				8F1A367D1B31E65100115632 /* GameScene.swift in Sources */,
 				8F1A367F1B31E65100115632 /* GameViewController.swift in Sources */,
+				8FA128331B440F1B000D7688 /* GameInstructVC.swift in Sources */,
+				8F94A8AA1B44893D000B40C2 /* Game3InstructionsVC.swift in Sources */,
+				8F94A8A81B4479AA000B40C2 /* Game2InstructionsVC.swift in Sources */,
 				8F1A36791B31E65100115632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
