@@ -37,6 +37,7 @@ class GameScene: SKScene {
         
         self.size = view.bounds.size
         
+        
         // turn off gravity
         
         self.physicsWorld.gravity = CGVectorMake(0, 0)
@@ -48,16 +49,15 @@ class GameScene: SKScene {
         self.addChild(background)
         
         // add spinner
-        spinner.position = CGPointMake(frame.midX, frame.midY)
-        spinner.size = CGSize(width: 250, height: 25)
+        
+        spinner.size = CGSize(width: 220, height: 10)
         spinner.position = CGPoint(x: 125, y: 0.0)
         spinner.zPosition = 10
+        spinner.physicsBody = SKPhysicsBody(texture: spinner.texture, size: spinner.size);
+        spinner.physicsBody!.allowsRotation = true;
+        spinner.physicsBody?.pinned = true
+//        spinner.physicsBody?.angularDamping = 0.1
         
-        
-        
-        /*spinner!.physicsBody = SKPhysicsBody(texture: spinner!.texture, size: spinner!.size);
-        spinner!.physicsBody!.affectedByGravity = true;
-        spinner!.physicsBody!.allowsRotation = true;*/
         
         background.addChild(spinner)
     }
@@ -153,8 +153,6 @@ class GameScene: SKScene {
             globalGame = Int(section)
            
             self.vc!.performSegueWithIdentifier("gameSegue", sender: self.vc)
-            self.vc!.navigationController?.popViewControllerAnimated(true)
-            
         }
     }
 }

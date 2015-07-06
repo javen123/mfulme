@@ -15,20 +15,31 @@ class GameInstructVC: UIViewController {
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var gameText: UILabel!
-    @IBOutlet weak var gameView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timeGameLabel: UILabel!
     
+    let textColor = UIColor.blackColor()
     let aGame = gamesAray
-    var game:Game!
-    
-    override func viewWillAppear(animated: Bool) {
-        gameNumber(globalGame)
-        
-    }
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gGame = gamesAray[globalGame]
+        
+        if globalGame == 2 || globalGame == 7 {
+           
+            self.gameText.textColor = textColor
+            self.timeGameLabel.textColor = textColor
+            self.gameTitle.textColor = textColor
+            self.timeGameLabel.textColor = textColor
+            self.timeLabel.textColor = textColor
+        }
+        
+        self.navigationController?.navigationBarHidden = true
+        self.gameText.text = gGame.needs
+        self.timeGameLabel.text = gGame.time
+        self.gameTitle.text = gGame.title
+        self.backgroundImg.image = gGame.backgroundImage
         
         self.stepsLabel.textAlignment = .Justified
         
@@ -38,17 +49,15 @@ class GameInstructVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "game2Segue"{
-            let game:Game2InstructionsVC = segue.destinationViewController as! Game2InstructionsVC
-            game.game2 = self.game
-            
-        }
-    }
+
     @IBAction func kbackBtn(sender: AnyObject) {
         globalGame = 0
-        self.dismissViewControllerAnimated(true, completion:nil)
+        gGame = nil
+        
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     
@@ -56,20 +65,6 @@ class GameInstructVC: UIViewController {
         
         self.performSegueWithIdentifier("game2Segue", sender: self)
     }
-    func gameNumber(num: Int) {
-        
-        let aNum = num - 1
-        for (index, element) in enumerate(aGame){
-            if aNum == index {
-                
-                self.backgroundImg.image = element.backgroundImage
-                self.gameTitle.text = element.title
-                self.stepsLabel.text = "Needs: "
-                self.gameText.text = element.needs
-                self.timeGameLabel.text = element.time
-                self.gameImage.image = element.image
-                self.game = element
-            }
-        }
-    }
+    
+    
 }

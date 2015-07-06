@@ -9,6 +9,7 @@
 import UIKit
 
 var globalGame = 1
+var gGame:Game!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
