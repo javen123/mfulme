@@ -3,17 +3,16 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "spinner.png"
+      "filename" : "iAmYouAre@1x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "spinner@2x.png"
+      "filename" : "iAmYouAre@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "spinner@3x.png"
+      "scale" : "3x"
     }
   ],
   "info" : {

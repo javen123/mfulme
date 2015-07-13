@@ -12,11 +12,21 @@ class Game4InstructionsVC: UIViewController {
 
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var gameText: UILabel!
+    @IBOutlet weak var finallyLabel: UILabel!
     
-    var g4:Game!
+    
+    let textColor = UIColor.blackColor()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if globalGame == 2 || globalGame == 7 {
+            
+            self.gameText.textColor = textColor
+            self.finallyLabel.textColor = textColor
+        }
+
         
         self.navigationController?.navigationBarHidden = true
         

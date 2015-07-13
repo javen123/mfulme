@@ -33,6 +33,7 @@ class GameInstructVC: UIViewController {
             self.gameTitle.textColor = textColor
             self.timeGameLabel.textColor = textColor
             self.timeLabel.textColor = textColor
+            self.stepsLabel.textColor = textColor
         }
         
         self.navigationController?.navigationBarHidden = true
@@ -40,7 +41,7 @@ class GameInstructVC: UIViewController {
         self.timeGameLabel.text = gGame.time
         self.gameTitle.text = gGame.title
         self.backgroundImg.image = gGame.backgroundImage
-        
+        self.gameImage.image = gGame.image
         self.stepsLabel.textAlignment = .Justified
         
     }

@@ -14,13 +14,23 @@ class Game3InstructionsVC: UIViewController {
     @IBOutlet weak var gameText: UILabel!
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var newGameBtn: UIButton!
+    @IBOutlet weak var andNowLabel: UILabel!
     
+    let textColor = UIColor.blackColor()
     
     var g3:Game!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if globalGame == 2 || globalGame == 7 {
+            
+            self.gameText.textColor = textColor
+            self.andNowLabel.textColor = textColor
+            
+        }
+
         self.navigationController?.navigationBarHidden = true
         
         self.gameText.text = gGame.pageTwo

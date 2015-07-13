@@ -23,12 +23,13 @@
                         <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
                         <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                    <view key="view" contentMode="center" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fjA-3o-pV4"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="gHl-oC-dIj" kind="show" identifier="gameSegue" id="a6B-l1-MJJ"/>
                     </connections>
@@ -59,13 +60,13 @@
                                     <constraint firstAttribute="height" constant="100" id="fbR-aP-o3F"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Needs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ys-v0-CLx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Needs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5ys-v0-CLx">
                                 <rect key="frame" x="133" y="285" width="63" height="20"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-GA-UlJ" userLabel="needsLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-GA-UlJ" userLabel="needsLabel">
                                 <rect key="frame" x="204" y="285" width="336" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="kHj-aM-6cX"/>
@@ -93,13 +94,13 @@
                                     <action selector="gameInstBtn:" destination="gHl-oC-dIj" eventType="touchUpInside" id="zgq-mI-Biw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUH-RS-oCH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZUH-RS-oCH">
                                 <rect key="frame" x="144" y="365" width="52" height="20"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-lZ-n9A" userLabel="timeLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oeL-lZ-n9A" userLabel="timeLabel">
                                 <rect key="frame" x="204" y="364" width="313" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="2g3-mX-fCq"/>
@@ -109,7 +110,7 @@
                                 <color key="textColor" red="1" green="1" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oz-AN-dzR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="9Oz-AN-dzR">
                                 <rect key="frame" x="271" y="244" width="58" height="24"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,7 +174,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-5F-YoF">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-CS-Lz2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-CS-Lz2">
                                 <rect key="frame" x="221" y="257" width="158" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="1VS-hV-p3D"/>
@@ -200,7 +201,7 @@
                                     <action selector="nextBtn:" destination="Y7U-XB-kIP" eventType="touchUpInside" id="wi3-Zp-YZY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-y1-cvA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-y1-cvA">
                                 <rect key="frame" x="71" y="321" width="481" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="6es-EB-e0A"/>
@@ -231,6 +232,7 @@
                         <outlet property="backgroundImage" destination="cLn-5F-YoF" id="GCo-Ez-oRP"/>
                         <outlet property="gameInstructionsLabel" destination="Bki-y1-cvA" id="XxR-ve-3qK"/>
                         <outlet property="nextBtnLabel" destination="uF5-F3-wLU" id="hgL-wI-yD0"/>
+                        <outlet property="pageTitleLabel" destination="Bhx-CS-Lz2" id="nGk-Ss-ofY"/>
                         <segue destination="a6n-MP-pCm" kind="show" identifier="game3Segue" id="X0U-f5-5qJ"/>
                     </connections>
                 </viewController>
@@ -262,7 +264,7 @@
                                     <action selector="backBtn:" destination="a6n-MP-pCm" eventType="touchUpInside" id="cAf-8m-FQ8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-4e-zeL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-4e-zeL">
                                 <rect key="frame" x="69" y="319" width="481" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="0uv-lo-IqW"/>
@@ -295,7 +297,7 @@
                                     <action selector="newGameBtnPressed:" destination="a6n-MP-pCm" eventType="touchUpInside" id="lAh-HG-tAg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and now..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2k-A5-UFe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and now..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="k2k-A5-UFe">
                                 <rect key="frame" x="246" y="266" width="109" height="24"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -321,6 +323,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="andNowLabel" destination="k2k-A5-UFe" id="qnV-SY-bdn"/>
                         <outlet property="backgroundImg" destination="FG3-Q0-vc8" id="3DY-5q-Ugp"/>
                         <outlet property="gameText" destination="WN0-4e-zeL" id="YIT-Gp-iUH"/>
                         <outlet property="newGameBtn" destination="FKn-cO-bGm" id="YDt-yC-pj8"/>
@@ -347,7 +350,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vqF-wg-ijD" userLabel="backgroundImg">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtP-S2-4Dk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QtP-S2-4Dk">
                                 <rect key="frame" x="70" y="331" width="481" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="14t-ha-btq"/>
@@ -380,7 +383,7 @@
                                     <action selector="backBtnPressed:" destination="BbT-cr-3X5" eventType="touchUpInside" id="cg4-gk-a7L"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finally..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3k-9i-fEZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finally..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="A3k-9i-fEZ">
                                 <rect key="frame" x="221" y="263" width="158" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="rjY-cQ-ymc"/>
@@ -408,6 +411,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImg" destination="vqF-wg-ijD" id="s0I-za-oiy"/>
+                        <outlet property="finallyLabel" destination="A3k-9i-fEZ" id="SXw-Ks-YeG"/>
                         <outlet property="gameText" destination="QtP-S2-4Dk" id="B7d-rt-Ehx"/>
                     </connections>
                 </viewController>

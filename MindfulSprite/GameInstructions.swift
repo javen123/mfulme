@@ -119,7 +119,7 @@ let gamesAray = [discoverYourInnerBreath, discoverYourInnerBreath, wakeUpYourInn
     let iAmYouAre = Game(
         backgroundImage:UIImage(named: "blueBackground")!,
         title:"I Am / You Are",
-        image: UIImage(named: "mindfulListeningImg")!,
+        image: UIImage(named: "iAmYouAre")!,
         time: "15 minutes",
         needs: "An envelope (or paper to make an envelope), paper, colored pencils, crayons or markers.",
         pageOne: "Find (or make) an envelope to decorate.  Have fun and be creative.  Be sure to include your name.",

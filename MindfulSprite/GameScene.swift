@@ -37,7 +37,6 @@ class GameScene: SKScene {
         
         self.size = view.bounds.size
         
-        
         // turn off gravity
         
         self.physicsWorld.gravity = CGVectorMake(0, 0)
@@ -50,15 +49,15 @@ class GameScene: SKScene {
         
         // add spinner
         
-        spinner.size = CGSize(width: 220, height: 10)
-        spinner.position = CGPoint(x: 125, y: 0.0)
+        spinner.position = CGPoint(x: background.frame.width/4.6, y: background.frame.height/100)
         spinner.zPosition = 10
         spinner.physicsBody = SKPhysicsBody(texture: spinner.texture, size: spinner.size);
         spinner.physicsBody!.allowsRotation = true;
-        spinner.physicsBody?.pinned = true
+//        spinner.physicsBody?.pinned = true
+        
+        
 //        spinner.physicsBody?.angularDamping = 0.1
-        
-        
+                
         background.addChild(spinner)
     }
     
