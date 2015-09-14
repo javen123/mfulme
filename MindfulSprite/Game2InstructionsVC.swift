@@ -20,12 +20,12 @@ class Game2InstructionsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if globalGame == 2 || globalGame == 7 {
+        if globalGame == 3 || globalGame == 8 {
             
             self.gameInstructionsLabel.textColor = textColor
             self.pageTitleLabel.textColor = textColor
         }
-
+        
         
         self.navigationController?.navigationBarHidden = true
         
@@ -54,5 +54,9 @@ class Game2InstructionsVC: UIViewController {
         
     }
 
+    @IBAction func backToSpinnerPressed(sender: UIButton) {
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
    
 }

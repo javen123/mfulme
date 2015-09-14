@@ -8,7 +8,7 @@
 
 import UIKit
 
-var globalGame = 1
+var globalGame = 0
 var gGame:Game!
 
 @UIApplicationMain

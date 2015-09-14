@@ -20,6 +20,7 @@
 		8F94A8A81B4479AA000B40C2 /* Game2InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F94A8A71B4479AA000B40C2 /* Game2InstructionsVC.swift */; };
 		8F94A8AA1B44893D000B40C2 /* Game3InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F94A8A91B44893D000B40C2 /* Game3InstructionsVC.swift */; };
 		8FA128331B440F1B000D7688 /* GameInstructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA128321B440F1B000D7688 /* GameInstructVC.swift */; };
+		8FA98D8D1BA1E68000B428C7 /* HoboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8FA98D8C1BA1E68000B428C7 /* HoboStd.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F1A36731B31E65100115632 /* MindfulSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindfulSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1A36731B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfulsprite.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1A36771B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1A36781B31E65100115632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1A367A1B31E65100115632 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -42,7 +43,7 @@
 		8F1A36811B31E65100115632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F1A36831B31E65100115632 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8F1A36861B31E65100115632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulSpriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1A368C1B31E65100115632 /* mindfulsprite.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfulsprite.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1A36911B31E65100115632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F1A36921B31E65100115632 /* MindfulSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulSpriteTests.swift; sourceTree = "<group>"; };
 		8F614D2E1B39B5770040D83E /* GameInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructions.swift; sourceTree = "<group>"; };
@@ -50,7 +51,7 @@
 		8F94A8A71B4479AA000B40C2 /* Game2InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game2InstructionsVC.swift; sourceTree = "<group>"; };
 		8F94A8A91B44893D000B40C2 /* Game3InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game3InstructionsVC.swift; sourceTree = "<group>"; };
 		8FA128321B440F1B000D7688 /* GameInstructVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructVC.swift; sourceTree = "<group>"; };
-		8FA128341B441689000D7688 /* HoboStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HoboStd.otf; path = ../HoboStd.otf; sourceTree = "<group>"; };
+		8FA98D8C1BA1E68000B428C7 /* HoboStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HoboStd.otf; path = ../../../Unity/MindfulMeGame/Assets/Fonts/HoboStd.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +84,8 @@
 		8F1A36741B31E65100115632 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F1A36731B31E65100115632 /* MindfulSprite.app */,
-				8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */,
+				8F1A36731B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename.app */,
+				8F1A368C1B31E65100115632 /* mindfulsprite.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +109,7 @@
 		8F1A36761B31E65100115632 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8FA128341B441689000D7688 /* HoboStd.otf */,
+				8FA98D8C1BA1E68000B428C7 /* HoboStd.otf */,
 				8F1A36771B31E65100115632 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -146,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F1A36721B31E65100115632 /* MindfulSprite */ = {
+		8F1A36721B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSprite" */;
+			buildConfigurationList = 8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "mindfulsprite.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				8F1A366F1B31E65100115632 /* Sources */,
 				8F1A36701B31E65100115632 /* Frameworks */,
@@ -158,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = MindfulSprite;
+			name = mindfulsprite.temp_caseinsensitive_rename;
 			productName = MindfulSprite;
-			productReference = 8F1A36731B31E65100115632 /* MindfulSprite.app */;
+			productReference = 8F1A36731B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F1A368B1B31E65100115632 /* MindfulSpriteTests */ = {
+		8F1A368B1B31E65100115632 /* mindfulsprite.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSpriteTests" */;
+			buildConfigurationList = 8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "mindfulsprite.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				8F1A36881B31E65100115632 /* Sources */,
 				8F1A36891B31E65100115632 /* Frameworks */,
@@ -176,9 +177,9 @@
 			dependencies = (
 				8F1A368E1B31E65100115632 /* PBXTargetDependency */,
 			);
-			name = MindfulSpriteTests;
+			name = mindfulsprite.temp_caseinsensitive_renameTests;
 			productName = MindfulSpriteTests;
-			productReference = 8F1A368C1B31E65100115632 /* MindfulSpriteTests.xctest */;
+			productReference = 8F1A368C1B31E65100115632 /* mindfulsprite.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +201,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "MindfulSprite" */;
+			buildConfigurationList = 8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "mindfulsprite" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,8 +214,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F1A36721B31E65100115632 /* MindfulSprite */,
-				8F1A368B1B31E65100115632 /* MindfulSpriteTests */,
+				8F1A36721B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename */,
+				8F1A368B1B31E65100115632 /* mindfulsprite.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +229,7 @@
 				8F1A36841B31E65100115632 /* Images.xcassets in Resources */,
 				8F1A367B1B31E65100115632 /* GameScene.sks in Resources */,
 				8F1A36821B31E65100115632 /* Main.storyboard in Resources */,
+				8FA98D8D1BA1E68000B428C7 /* HoboStd.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +271,7 @@
 /* Begin PBXTargetDependency section */
 		8F1A368E1B31E65100115632 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F1A36721B31E65100115632 /* MindfulSprite */;
+			target = 8F1A36721B31E65100115632 /* mindfulsprite.temp_caseinsensitive_rename */;
 			targetProxy = 8F1A368D1B31E65100115632 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -385,7 +387,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MindfulSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mindfulsprite.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -398,7 +400,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MindfulSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mindfulsprite.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -417,8 +419,8 @@
 				);
 				INFOPLIST_FILE = MindfulSpriteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindfulSprite.app/MindfulSprite";
+				PRODUCT_NAME = mindfulsprite.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindfulsprite.temp_caseinsensitive_rename.app/mindfulsprite.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -432,15 +434,15 @@
 				);
 				INFOPLIST_FILE = MindfulSpriteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindfulSprite.app/MindfulSprite";
+				PRODUCT_NAME = mindfulsprite.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindfulsprite.temp_caseinsensitive_rename.app/mindfulsprite.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "MindfulSprite" */ = {
+		8F1A366E1B31E65100115632 /* Build configuration list for PBXProject "mindfulsprite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F1A36941B31E65100115632 /* Debug */,
@@ -449,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSprite" */ = {
+		8F1A36961B31E65100115632 /* Build configuration list for PBXNativeTarget "mindfulsprite.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F1A36971B31E65100115632 /* Debug */,
@@ -458,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "MindfulSpriteTests" */ = {
+		8F1A36991B31E65100115632 /* Build configuration list for PBXNativeTarget "mindfulsprite.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F1A369A1B31E65100115632 /* Debug */,

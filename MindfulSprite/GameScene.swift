@@ -25,32 +25,36 @@ class GameScene: SKScene {
     var kDeceleration:CGFloat   = 1.0
     var kSpinnerSpeed:CGFloat     = 0.0
     
-    let background = SKSpriteNode(imageNamed: "board")
+    let background = SKSpriteNode(imageNamed: "board-iphone")
     let spinner = SKSpriteNode(imageNamed: "spinner")
     
     var vc:UIViewController?
-    var section:CGFloat!
-    
+   
+    //FIX: resize images in sketch
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
         self.size = view.bounds.size
         
+        
+        
         // turn off gravity
         
         self.physicsWorld.gravity = CGVectorMake(0, 0)
         
         // add background
-        background.position = CGPointMake(view.bounds.width/2, view.bounds.height/2)
-        background.size = CGSize(width: self.size.width, height: self.size.height)
+        
+        background.size = CGSize(width: self.size.width, height: self.size.width/1.8)
+        background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         background.blendMode = SKBlendMode.Replace
+        
         self.addChild(background)
         
         // add spinner
         
         spinner.position = CGPoint(x: background.frame.width/4.6, y: background.frame.height/100)
-        spinner.zPosition = 10
+        spinner.zPosition = 5
         spinner.physicsBody = SKPhysicsBody(texture: spinner.texture, size: spinner.size);
         spinner.physicsBody!.allowsRotation = true;
 //        spinner.physicsBody?.pinned = true
@@ -95,12 +99,11 @@ class GameScene: SKScene {
                     // Determine gesture speed in points/sec
                     var speed:CGFloat = magnitude / dt;
                     if (speed >= kMinSpeed /*&& speed <= kMaxSpeed*/) {
-                        println("swipe detected")
                         var fracSpeed = speed / (kMaxSpeed - kMinSpeed)
                         if(fracSpeed > 1) {fracSpeed = 1.0}
                         
                         kSpinnerSpeed = fracSpeed * 10;
-                        
+                        self.view?.userInteractionEnabled = false;
                     }
                 }
             }
@@ -110,9 +113,6 @@ class GameScene: SKScene {
     
     var lastUpdateTimeInterval: CFTimeInterval?
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
-        
-        
         var delta: CFTimeInterval = currentTime // no reason to make it optional
         if let luti = lastUpdateTimeInterval {
             delta = currentTime - luti
@@ -137,21 +137,43 @@ class GameScene: SKScene {
         if (kSpinnerSpeed <= 0.0) {
             kSpinnerSpeed = 0.0
             
-            var finalAngle = fabs(spinner.zRotation);
-            let sectionAngle = M_PI/5
-            var remainderAngle = (finalAngle % (CGFloat)(2*M_PI))
+            var section = finalSpinnerSection()
             
-            self.section = ceil(remainderAngle / (CGFloat)(sectionAngle))
             
-            if(spinner.zRotation > 0) {
-                self.section = 11 - self.section
-            }
+            var sect = section - 1
+            globalGame = Int(sect)
+            println("Sect is: \(sect)")
             
-            println("the tile piece is \(self.section)")
             
-            globalGame = Int(section)
-           
+            
+            println("Global game is: \(globalGame)")
+            
             self.vc!.performSegueWithIdentifier("gameSegue", sender: self.vc)
+            self.view?.userInteractionEnabled = true;
+            self.view?.reloadInputViews()
+            
         }
     }
+    
+    func convertRadiansToDegrees (radian:CGFloat) -> Double {
+        
+        var x = ceil(radian * 57.29577)
+        
+        return Double(x)
+        
+    }
+    
+    //spinner hleper to reset upon each spin
+    
+    func finalSpinnerSection () -> Int {
+        
+        var finalAngle = fabs(spinner.zRotation);
+        let sectionAngle = M_PI/5
+        var remainderAngle = (finalAngle % (CGFloat)(2*M_PI))
+        
+        var section = ceil(remainderAngle / (CGFloat)(sectionAngle))
+        println("func section is: \(section)")
+        return Int(section)
+    }
+    
 }

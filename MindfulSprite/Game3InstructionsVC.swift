@@ -24,7 +24,7 @@ class Game3InstructionsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if globalGame == 2 || globalGame == 7 {
+        if globalGame == 3 || globalGame == 8 {
             
             self.gameText.textColor = textColor
             self.andNowLabel.textColor = textColor
@@ -38,7 +38,6 @@ class Game3InstructionsVC: UIViewController {
         
         if gGame.pageThree == nil {
             self.nextBtnLabel.hidden = true
-            self.newGameBtn.hidden = false
         }
         else {
             self.nextBtnLabel.hidden = false

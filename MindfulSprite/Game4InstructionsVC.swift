@@ -21,7 +21,7 @@ class Game4InstructionsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if globalGame == 2 || globalGame == 7 {
+        if globalGame == 3 || globalGame == 8 {
             
             self.gameText.textColor = textColor
             self.finallyLabel.textColor = textColor

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,16 +10,16 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG_Logo OL2208" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-4i-sRa">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcher" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-up-oHz">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="FPx-4i-sRa" secondAttribute="bottom" id="7bk-IM-pV3"/>
-                <constraint firstItem="FPx-4i-sRa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AqG-6J-SQl"/>
-                <constraint firstItem="FPx-4i-sRa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PPZ-8w-NFf"/>
-                <constraint firstAttribute="trailing" secondItem="FPx-4i-sRa" secondAttribute="trailing" id="wVo-Sn-4lw"/>
+                <constraint firstAttribute="bottom" secondItem="NsO-up-oHz" secondAttribute="bottom" id="07s-ra-FIz"/>
+                <constraint firstItem="NsO-up-oHz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JL3-eB-9Ep"/>
+                <constraint firstAttribute="trailing" secondItem="NsO-up-oHz" secondAttribute="trailing" id="Tex-pD-4Li"/>
+                <constraint firstItem="NsO-up-oHz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cIp-nJ-o0j"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -27,6 +27,6 @@
         </view>
     </objects>
     <resources>
-        <image name="BG_Logo OL2208" width="2208" height="1842"/>
+        <image name="launcher" width="480" height="480"/>
     </resources>
 </document>

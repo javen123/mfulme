@@ -35,6 +35,7 @@ class GameViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
         
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
+            
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = false
@@ -44,7 +45,8 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .ResizeFill
+            
+            scene.scaleMode = .AspectFill
             scene.vc = self
             skView.presentScene(scene)
         }

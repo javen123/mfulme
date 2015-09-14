@@ -26,7 +26,7 @@ class GameInstructVC: UIViewController {
         
         gGame = gamesAray[globalGame]
         
-        if globalGame == 2 || globalGame == 7 {
+        if globalGame == 3 || globalGame == 8 {
            
             self.gameText.textColor = textColor
             self.timeGameLabel.textColor = textColor
@@ -37,6 +37,7 @@ class GameInstructVC: UIViewController {
         }
         
         self.navigationController?.navigationBarHidden = true
+        
         self.gameText.text = gGame.needs
         self.timeGameLabel.text = gGame.time
         self.gameTitle.text = gGame.title
